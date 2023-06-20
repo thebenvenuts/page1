@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Not a rickroll</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    #video-container {
+      position: relative;
+      text-align: center;
+    }
+    
+    #video-caption {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+    
+    #image-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    #image-link img {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div id="video-container">
+    <video controls autoplay>
+      <source src="data/video.mp4" type="video/mp4">
+      <!-- Aggiungi altre sorgenti video per garantire la compatibilità con diversi browser -->
+      Il tuo browser non supporta il tag video.
+    </video>
+    <div id="video-caption">Not a rickroll</div>
+    <div id="image-link">
+      <a href="https://thebenvenuts.github.io/links">
+        <img src="data/logo.png" alt="Immagine di esempio">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
